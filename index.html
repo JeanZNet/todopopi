@@ -58,14 +58,17 @@
             <!-- Datos del Cliente -->
             <div class="space-y-4">
                 <h3 class="font-serif text-xl text-rose-900 border-b border-pink-200 pb-2 flex items-center">
-                    <span>👤</span> <span class="ml-2">Tus Datos</span>
+                    <span>👤</span> <span class="ml-2">Tus Datos Para La Entrega</span>
                 </h3>
                 <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-1">Nombre Completo</label>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Nombre Completo ✏️</label>
                     <input type="text" id="nombre" required class="w-full px-4 py-3 rounded-xl border border-pink-200 focus:ring-2 focus:ring-rose-400 focus:border-rose-400 outline-none transition-all bg-white/50" placeholder="Ej. María Pérez">
                 </div>
+                <label class="block text-sm font-medium text-gray-700 mb-1">Dirección donde será la entrega 📍</label>
+                    <input type="text" id="nombre" required class="w-full px-4 py-3 rounded-xl border border-pink-200 focus:ring-2 focus:ring-rose-400 focus:border-rose-400 outline-none transition-all bg-white/50" placeholder="Ej. Madre Vieja,San Cristóbal">
+                </div>
                 <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-1">Fecha de Entrega</label>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Fecha de Entrega 📆</label>
                     <input type="date" id="fecha" required class="w-full px-4 py-3 rounded-xl border border-pink-200 focus:ring-2 focus:ring-rose-400 focus:border-rose-400 outline-none transition-all bg-white/50">
                 </div>
             </div>
@@ -82,7 +85,7 @@
                     </label>
                     <label class="flex items-center p-4 border border-pink-200 rounded-xl cursor-pointer hover:bg-pink-50 transition-colors">
                         <input type="radio" name="arreglo" value="Ramo estilo Ropa (Deportiva/Íntima)" class="w-5 h-5 text-rose-500 focus:ring-rose-500 border-gray-300">
-                        <span class="ml-3 font-medium text-gray-700">Ramo de Ropa (Estilo Vibra Flow) 👚</span>
+                        <span class="ml-3 font-medium text-gray-700"> Ropas (Estilo, Vibra, Flow) 👚</span>
                     </label>
                     <label class="flex items-center p-4 border border-pink-200 rounded-xl cursor-pointer hover:bg-pink-50 transition-colors">
                         <input type="radio" name="arreglo" value="Desayuno Sorpresa" class="w-5 h-5 text-rose-500 focus:ring-rose-500 border-gray-300">
@@ -98,12 +101,21 @@
                 </h3>
                 
                 <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-1">Bandeja de Pastelitos</label>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Bandeja de Pastelitos 🥐</label>
                     <select id="pastelitos" class="w-full px-4 py-3 rounded-xl border border-pink-200 focus:ring-2 focus:ring-rose-400 focus:border-rose-400 outline-none transition-all bg-white/50">
                         <option value="Ninguno">No deseo pastelitos</option>
                         <option value="Bandeja de 6 unidades">Bandeja de 6 unidades</option>
                         <option value="Bandeja de 12 unidades">Bandeja de 12 unidades</option>
                         <option value="Bandeja de 24 unidades">Bandeja de 24 unidades</option>
+                        <option value="Cantidad Personalizada">Cantidad personalizada (especificar abajo)</option>
+                    </select>
+                    <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Combo de Jugos 🧋</label>
+                    <select id="jugos" class="w-full px-4 py-3 rounded-xl border border-pink-200 focus:ring-2 focus:ring-rose-400 focus:border-rose-400 outline-none transition-all bg-white/50">
+                        <option value="Ninguno">No deseo jugo</option>
+                        <option value="6 unidades">Combo 6 unidades</option>
+                        <option value="12 unidades">Combo 12 unidades</option>
+                        <option value="24 unidades">Combo 24 unidades</option>
                         <option value="Cantidad Personalizada">Cantidad personalizada (especificar abajo)</option>
                     </select>
                 </div>
@@ -206,4 +218,4 @@
 </body>
 </html>
 
-```
+
